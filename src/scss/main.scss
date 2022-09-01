@@ -1,0 +1,17 @@
+@import "contact";
+@import "header";
+@import "reset";
+@import "gallery";
+@import "location";
+@import "services";
+@import "footer";
+@import "settings/fonts";
+@import "settings/colors";
+
+html body{
+  font-family: $openSans;
+  background: $background;
+}
+button{
+  cursor: pointer;
+}

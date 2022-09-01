@@ -1,0 +1,60 @@
+@import "settings/colors";
+@import "settings/fonts";
+@import "settings/breakpoints";
+
+
+.carousel{
+  width: 100%;
+  background-size: contain;
+  display: flex;
+  justify-content: center;
+  @media #{$laptop}{
+    margin-bottom: 50px;
+  }
+
+  .arrow1{
+    position: absolute;
+    margin-top: 30%;
+    left: 5px;
+    @media #{$laptop}{
+      left: 50px;
+      margin-top: 25%;
+    }
+    
+    i{
+      cursor: pointer;
+      color: #707070;
+      @media #{$tablet}{
+        font-size: 30px;
+      }
+      @media #{$laptop}{
+        font-size: 60px;
+      }
+      &:hover{
+        color: #858585;
+      }
+    }
+  }
+  .arrow2{
+    position: absolute;
+    right: 5px;
+    margin-top: 30%;
+    @media #{$laptop}{
+      right: 50px;
+      margin-top: 25%;
+    }
+    i{
+      @media #{$tablet}{
+        font-size: 30px;
+      }
+      @media #{$laptop}{
+        font-size: 60px;
+      }
+      cursor: pointer;
+      color: #707070;
+      &:hover{
+        color: #858585;
+      }
+    }
+  }
+}
